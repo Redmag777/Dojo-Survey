@@ -1,0 +1,46 @@
+.maincontainer {
+    width: 250px;
+    height: 250px;
+    background-color: beige;
+    border: solid black 3px;
+    border-radius: 10px;
+}
+.list{
+    list-style: none;
+}
+.button{
+    display: flex;
+    justify-content: center;
+}
+.table{
+    display: flex;
+    justify-content: center;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+h3 {
+    text-align: center;
+}
+.body{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.back{
+    display: flex;
+    justify-content: center;
+}
+.goback{
+    background-color: moccasin;
+    width: 80px;
+    height: 25px;
+    border-radius: 10px;
+}
+.submit{
+    background-color: moccasin;
+    width: 80px;
+    height: 25px;
+    border-radius: 10px;
+}

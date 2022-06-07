@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="maincontainer">
+        <form action="/submit" method="post">
+            <div class="table">
+                <ul class="list">
+                    <li>
+                        Your name: <input type="text" name="name">
+                    </li>
+                    <li>
+                        Favorite language: <select name="language">
+                            <option>Python</option>
+                            <option>Java Script</option>
+                            <option>HTML</option>
+                        </select>
+                    </li>
+                    <li>
+                        Dojo location: <select name="location">
+                            <option>San Jose</option>
+                            <option>Tirana</option>
+                            <option>LA</option>
+                        </select>
+                    </li>
+                    <li>
+                        <textarea name="comment" cols="20" rows="3"></textarea>
+                    </li>
+                </ul>
+            </div>
+                <div class="button">
+                    <input class="submit" type="submit" value="Submit">
+                </div>
+        </form>
+    </div>
+</body>
+</html>
