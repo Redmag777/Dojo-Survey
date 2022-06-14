@@ -2,7 +2,7 @@
     width: 250px;
     height: auto;
     background-color: rgba(128, 128, 128, 0.249);
-    border: solid black 2px;
+    border: solid black 1px;
     border-radius: 10px;
 }
 .list{
