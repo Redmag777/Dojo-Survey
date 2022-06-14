@@ -1,6 +1,6 @@
 .maincontainer {
     width: 250px;
-    height: 250px;
+    height: auto;
     background-color: beige;
     border: solid black 3px;
     border-radius: 10px;
