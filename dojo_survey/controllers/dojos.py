@@ -1,6 +1,5 @@
-from flask import render_template, redirect, request
+from flask import render_template, redirect, request, session
 from dojo_survey import app
-from dojo_survey.models.dojo import Dojo
 
 
 @app.route('/')
@@ -9,16 +8,18 @@ def first():
 
 @app.route('/submit', methods = ['POST'])
 def submit():
-    if Dojo.validate_dojo(request.form):
-        Dojo.save(request.form)
-        return redirect('/result')
-    return redirect('/')
+    session['name'] = request.form['name']
+    session['location'] = request.form['location']
+    session['language'] = request.form['language']
+    session['comment'] = request.form['comment']
+    return redirect('/result')
 
 @app.route('/result')
 def result():
-    return render_template('index2.html', dojo = Dojo.get_last_survey())
+    return render_template('index2.html')
 
 
 @app.route('/goback', methods =['POST'])
 def goback():
+    session.clear()
     return redirect('/')

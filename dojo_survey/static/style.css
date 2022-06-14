@@ -1,8 +1,8 @@
 .maincontainer {
     width: 250px;
     height: auto;
-    background-color: beige;
-    border: solid black 3px;
+    background-color: rgba(128, 128, 128, 0.249);
+    border: solid black 2px;
     border-radius: 10px;
 }
 .list{
@@ -11,6 +11,7 @@
 .button{
     display: flex;
     justify-content: center;
+    margin-bottom: 10px;
 }
 .table{
     display: flex;
@@ -33,13 +34,14 @@ h3 {
     justify-content: center;
 }
 .goback{
-    background-color: moccasin;
+    background-color: orange;
     width: 80px;
     height: 25px;
     border-radius: 10px;
+    margin-bottom: 10px;
 }
 .submit{
-    background-color: moccasin;
+    background-color: orange;
     width: 80px;
     height: 25px;
     border-radius: 10px;
